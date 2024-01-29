@@ -79,6 +79,7 @@ window.addEventListener('load', function() {
 
 }, false);
 
+//milestone 1
 function GalleryImage() {
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
@@ -90,6 +91,7 @@ function GalleryImage() {
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
 }
 
+//milestone 1
 function fetchJSON (){
 	JSON.parse('responseText')
 }
