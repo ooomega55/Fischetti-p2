@@ -89,3 +89,7 @@ function GalleryImage() {
 	var date;
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
 }
+
+function fetchJSON (){
+	JSON.parse('responseText')
+}
