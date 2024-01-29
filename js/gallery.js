@@ -34,6 +34,7 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
+	
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -93,5 +94,5 @@ function GalleryImage() {
 
 //milestone 1
 function fetchJSON (){
-	JSON.parse('responseText')
+	const responseText = JSON.parse('https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement')
 }
