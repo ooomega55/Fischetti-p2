@@ -33,8 +33,10 @@ function animate() {
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
 
 function swapPhoto() {
-	//Add code here to access the #slideShow element.
-	
+	//Add code here to access the #slideShow element. 
+	('#slideShow')
+	document.getElementById('photo')
+	src = 'mImages';
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -90,6 +92,7 @@ function GalleryImage() {
 	//3. the date when the photo was taken
 	var date;
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+	var img;
 }
 
 //milestone 1
