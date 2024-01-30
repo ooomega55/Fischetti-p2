@@ -34,9 +34,7 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element. 
-	('#slideShow')
-	document.getElementById('photo').getAttribute('src' = mImages)
-	mCurrentIndex = 1;
+	
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -73,7 +71,7 @@ $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
 	$('.details').eq(0).hide();
-	
+	fetchJSON();
 });
 
 window.addEventListener('load', function() {
@@ -105,6 +103,6 @@ function fetchJSON (){
 			console.log('We connected to the server but returned an error')
 		}
 	}
-	mRequest.open(GET, mUrl, true)
+	mRequest.open('GET', mUrl)
 	mRequest.send()
 }
