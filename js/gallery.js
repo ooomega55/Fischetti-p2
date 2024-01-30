@@ -105,8 +105,7 @@ function fetchJSON (){
 		} else {
 			console.log('We connected to the server but returned an error')
 		}
-		mRequest.open(GET, mUrl, true)
-		mRequest.send()
 	}
-	
+	mRequest.open(GET, mUrl, true)
+	mRequest.send()
 }
