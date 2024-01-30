@@ -37,6 +37,7 @@ function swapPhoto() {
 	('#slideShow')
 	document.getElementById('photo')
 	src = 'mImages';
+	var mCurrentIndex = 
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
@@ -97,5 +98,15 @@ function GalleryImage() {
 
 //milestone 1
 function fetchJSON (){
-	const responseText = JSON.parse('https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement')
+	mRequest.onreadystatechange = function () {
+		if (this.readyState >= 200 && this.status < 400) {
+			var mJson = JSON.parse(mRequest.responseText);
+			console.log(mJson);
+		} else {
+			console.log('We connected to the server but returned an error')
+		}
+		mRequest.open(GET, mUrl, true)
+		mRequest.send()
+	}
+	
 }
