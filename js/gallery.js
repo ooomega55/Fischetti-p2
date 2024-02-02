@@ -65,9 +65,13 @@ function swapPhoto() {
 }
 
 //iterate JSON function
-function iterateJSON {
-	for (let x = 0; x < mJSON.img.length; i++) {
-		
+function iterateJSON() {
+	for (let x = 0; x < mJSON.img.length; x++) {
+		x.mImages[mCurrentIndex] = GalleryImage
+		location = mJson.images[x].imgLocation
+		description = mJson.images[x].description
+		date = mJson.images[x].date
+		imgPath = mJson.images[x].imgPath
 	  }
 }
 
@@ -100,8 +104,9 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 $(document).ready( function() {
 	
 	// This initially hides the photos' metadata information
-	$('.details').eq(0).hide();
+	//$('.details').eq(0).hide();
 	fetchJSON();
+	iterateJSON(mJSON);
 });
 
 window.addEventListener('load', function() {
