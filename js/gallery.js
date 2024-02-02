@@ -1,15 +1,15 @@
 // requestAnim shim layer by Paul Irish
-    window.requestAnimFrame = (function(){
-      return  window.requestAnimationFrame       || 
-              window.webkitRequestAnimationFrame || 
-              window.mozRequestAnimationFrame    || 
-              window.oRequestAnimationFrame      || 
-              window.msRequestAnimationFrame     || 
-              function(/* function */ callback, /* DOMElement */ element){
-                window.setTimeout(callback, 1000 / 60);
-              };
-    })();
-  
+window.requestAnimFrame = (function () {
+	return window.requestAnimationFrame ||
+		window.webkitRequestAnimationFrame ||
+		window.mozRequestAnimationFrame ||
+		window.oRequestAnimationFrame ||
+		window.msRequestAnimationFrame ||
+		function (/* function */ callback, /* DOMElement */ element) {
+			window.setTimeout(callback, 1000 / 60);
+		};
+})();
+
 
 // example code from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
 
@@ -18,7 +18,7 @@ animate();
 var mLastFrameTime = 0;
 var mWaitTime = 5000; //time in ms
 function animate() {
-    requestAnimFrame( animate );
+	requestAnimFrame(animate);
 	var currentTime = new Date().getTime();
 	if (mLastFrameTime === 0) {
 		mLastFrameTime = currentTime;
@@ -34,14 +34,14 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element. 
-	if (mCurrentIndex >= mCurrentIndex.length) {
+	if (mCurrentIndex >= mJson.images.length()) {
 		mCurrentIndex = 0;
 	} else {
 		console.log('Error')
 	}
 
-	if (mCurrentIndex < 0){
-		mCurrentIndex.length = mImages.img[3];
+	if (mCurrentIndex < 0) {
+		mCurrentIndex.length() = mImages.img[-1];
 	}
 
 
@@ -66,13 +66,13 @@ function swapPhoto() {
 
 //iterate JSON function
 function iterateJSON() {
-	for (let x = 0; x < mJSON.img.length; x++) {
-		x.mImages[mCurrentIndex] = GalleryImage
-		location = mJson.images[x].imgLocation
-		description = mJson.images[x].description
-		date = mJson.images[x].date
-		imgPath = mJson.images[x].imgPath
-	  }
+	for (let x = 0; x < mJson.images.length(); x++) {
+		mImages[x] = new GalleryImage()
+		mImages[x].location = mJson.images[x].imgLocation
+		mImages[x].description = mJson.images[x].description
+		mImages[x].date = mJson.images[x].date
+		mImages[x].imgPath = mJson.images[x].imgPath
+	}
 }
 
 // Counter for the mImages array
@@ -95,22 +95,22 @@ var mUrl = 'images.json';
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
 function makeGalleryImageOnloadCallback(galleryImage) {
-	return function(e) {
+	return function (e) {
 		galleryImage.img = e.target;
 		mImages.push(galleryImage);
 	}
 }
 
-$(document).ready( function() {
-	
+$(document).ready(function () {
+
 	// This initially hides the photos' metadata information
 	//$('.details').eq(0).hide();
 	fetchJSON();
-	iterateJSON(mJSON);
+
 });
 
-window.addEventListener('load', function() {
-	
+window.addEventListener('load', function () {
+
 	console.log('window loaded');
 
 }, false);
@@ -129,9 +129,9 @@ function GalleryImage() {
 }
 
 //milestone 1
-function fetchJSON (){
+function fetchJSON() {
 	mRequest.onreadystatechange = function () {
-		if (this.readyState >= 200 && this.status < 400) {
+		if (this.readyState >= 4 && this.status == 200) {
 			var mJson = JSON.parse(mRequest.responseText);
 			console.log(mJson);
 		} else {
