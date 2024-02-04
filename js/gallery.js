@@ -42,12 +42,11 @@ function swapPhoto() {
 	}
 
 	if (mCurrentIndex < 0) {
-		mCurrentIndex.length() = mImages.img[-1];
+		mCurrentIndex = mImages.length[-1];
 	}
 
-
-	let photoElement = document.getElementById('photo')
-	photoElement.src = mImages[mCurrentIndex].img
+	let photoElement = document.getElementById('photo');
+	photoElement.src = mImages[mCurrentIndex].img;
 	//Access the img element and replace its source
 	let location = document.getElementsByClassName('location')[0];
 	let description = document.getElementsByClassName('description')[0];
@@ -68,11 +67,11 @@ function swapPhoto() {
 //iterate JSON function
 function iterateJSON() {
 	for (let x = 0; x < mJson.images.length(); x++) {
-		mImages[x] = new GalleryImage()
+		mImages[x] = new GalleryImage();
 		mImages[x].location = mJson.images[x].imgLocation
 		mImages[x].description = mJson.images[x].description
 		mImages[x].date = mJson.images[x].date
-		mImages[x].imgPath = mJson.images[x].imgPath
+		mImages[x].img = mJson.images[x].imgPath
 	}
 }
 
