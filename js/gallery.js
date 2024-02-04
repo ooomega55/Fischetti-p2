@@ -34,9 +34,10 @@ function animate() {
 
 function swapPhoto() {
 	//Add code here to access the #slideShow element. 
-	if (mCurrentIndex >= mJson.images.length()) {
+	if (mCurrentIndex >= mImages.length) {
 		mCurrentIndex = 0;
 	} else {
+		mCurrentIndex++;
 		console.log('Error')
 	}
 
