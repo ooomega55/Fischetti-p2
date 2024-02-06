@@ -71,7 +71,7 @@ function iterateJSON() {
 		mImages[x].location = mJson.images[x].imgLocation
 		mImages[x].description = mJson.images[x].description
 		mImages[x].date = mJson.images[x].date
-		mImages[x].img = mJson.images[x].imgPath
+		mImages[x].imgPath = mJson.images[x].imgPath
 	}
 }
 
