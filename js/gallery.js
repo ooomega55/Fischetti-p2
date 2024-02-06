@@ -36,17 +36,13 @@ function swapPhoto() {
 	//Add code here to access the #slideShow element. 
 	if (mCurrentIndex >= mImages.length) {
 		mCurrentIndex = 0;
-	} else {
-		mCurrentIndex++;
-		console.log('Error')
-	}
+	} 
 
 	if (mCurrentIndex < 0) {
-		mCurrentIndex = mImages.length[-1];
+		mCurrentIndex = mImages.length - 1;
 	}
 	
-	let photoElement = document.getElementById('photo');
-	photoElement.src = mImages[mCurrentIndex].img;
+	document.getElementById('photo').src = mImages[mCurrentIndex].imgPath;
 	//Access the img element and replace its source
 	let location = document.getElementsByClassName('location')[0];
 	let description = document.getElementsByClassName('description')[0];
@@ -64,16 +60,6 @@ function swapPhoto() {
 	console.log('swap photo');
 }
 
-//iterate JSON function
-function iterateJSON() {
-	for (let x = 0; x < mJson.images.length(); x++) {
-		mImages[x] = new GalleryImage();
-		mImages[x].location = mJson.images[x].imgLocation
-		mImages[x].description = mJson.images[x].description
-		mImages[x].date = mJson.images[x].date
-		mImages[x].imgPath = mJson.images[x].imgPath
-	}
-}
 
 // Counter for the mImages array
 var mCurrentIndex = 0;
@@ -119,25 +105,36 @@ window.addEventListener('load', function () {
 function GalleryImage() {
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
-	var location;
+	let location
 	//2. description of photo
-	var description;
+	let description
 	//3. the date when the photo was taken
-	var date;
+	let date
 	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
-	var img;
+	let img
 }
 
 //milestone 1
-function fetchJSON() {
+function fetchJSON(mJson) {
 	mRequest.onreadystatechange = function () {
-		if (this.readyState >= 4 && this.status == 200) {
+		if (this.readyState == 4 && this.status == 200) {
 			var mJson = JSON.parse(mRequest.responseText);
 			console.log(mJson);
+			iterateJSON(mJson)
 		} else {
 			console.log('We connected to the server but returned an error')
 		}
 	}
 	mRequest.open('GET', mUrl)
 	mRequest.send()
+}
+//iterate JSON function
+function iterateJSON(mJson) {
+	for (let x = 0; x < mJson.images.length; x++) {
+		mImages[x] = new GalleryImage();
+		mImages[x].location = mJson.images[x].imgLocation
+		mImages[x].description = mJson.images[x].description
+		mImages[x].date = mJson.images[x].date
+		mImages[x].imgPath = mJson.images[x].imgPath
+	}
 }
