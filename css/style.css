@@ -70,7 +70,33 @@ body {
 
 /*Add CSS styles to rotate the element 90deg
 Make it animate nicely. You'll need CSS3 for this*/
-.rot90 {}
+.rot90 {
+	position: fixed;
+	top: 550px;
+}
+
+
+.rot90:active{
+	opacity: 1;
+	-moz-transform: scale(1) rotate(90deg) translate(0px);
+	-webkit-transform: scale(1) rotate(90deg) translate(0px);
+	-o-transform: scale(1) rotate(90deg) translate(0px);
+	transform: scale(1) rotate(90deg) translate(0px);
+	z-index: 1000;
+	display: inline-block;
+	padding: 10px;
+	background: #ffffa2;
+	opacity: 0.3;
+	
+	/* Firefox */
+	-moz-transition: all 1s ease;
+	/* WebKit */
+	-webkit-transition: all 1s ease;
+	/* Opera */
+	-o-transition: all 1s ease;
+	/* Standard */
+	transition: all 1s ease;
+}
 
 /*Add CSS styles to rotate the element 180deg
 Make it animate nicely. You'll need CSS3 for this*/
