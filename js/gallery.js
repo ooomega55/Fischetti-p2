@@ -44,7 +44,7 @@ function swapPhoto() {
 	if (mCurrentIndex < 0) {
 		mCurrentIndex = mImages.length[-1];
 	}
-
+	
 	let photoElement = document.getElementById('photo');
 	photoElement.src = mImages[mCurrentIndex].img;
 	//Access the img element and replace its source
