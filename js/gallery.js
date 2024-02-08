@@ -138,3 +138,17 @@ function iterateJSON(mJson) {
 		mImages[x].imgPath = mJson.images[x].imgPath
 	}
 }
+
+$( "img.moreIndicator" ).on( "click", function() {
+	if ('img.moreIndicator'.hasClass('rot90')){
+		$( 'img.moreIndicator' ).addClass( 'rot270' );
+	} else {
+		$('img.moreIndicator').removeClass('rot270').addClass('rot90')
+	}
+  } );
+
+  $('div.details').on( "click", function() {
+	$('div.details').slideToggle( "slow", function() {
+		$('div.details').slideUp();
+	});
+  });
