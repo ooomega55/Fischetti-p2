@@ -31,7 +31,7 @@ body {
 	z-index: 3;
 	opacity: .8;
 	position: relative;
-	left: 500px;
+	left: 50%;
 }
 
 .thumbnail {
@@ -55,7 +55,7 @@ body {
 	width: 42px;
 }
 
-#prevPhoto:hover {
+#nav #prevPhoto:hover {
 	opacity: 0.8;
 }
 
@@ -64,7 +64,7 @@ body {
 	width: 42px;
 }
 
-#nextPhoto:hover {
+#nav #nextPhoto:hover {
 	opacity: 0.8;
 }
 
