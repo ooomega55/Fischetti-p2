@@ -89,6 +89,7 @@ $(document).ready(function () {
   //$('.details').eq(0).hide();
   fetchJSON();
 
+  //milestone 3
   $(".moreIndicator").on("click", function () {
     if ($(".moreIndicator").hasClass("rot90")) {
       $(".moreIndicator").removeClass("rot90");
@@ -106,7 +107,7 @@ $(document).ready(function () {
     at: "right",
     of: "#nav",
   });
-  
+
   $("#prevPhoto").on("click", function () {
     mCurrentIndex--;
     swapPhoto();
@@ -118,6 +119,7 @@ $(document).ready(function () {
     swapPhoto();
     mCurrentIndex--;
   });
+  //end of milestone 3
 });
 
 window.addEventListener(
