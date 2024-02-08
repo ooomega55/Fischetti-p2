@@ -152,3 +152,9 @@ $( "img.moreIndicator" ).on( "click", function() {
 		$('div.details').slideUp();
 	});
   });
+
+  $( "img#nextPhoto" ).position({
+	my: "right",
+	at: "right",
+	of: "div#nav"
+  });
