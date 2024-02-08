@@ -91,7 +91,6 @@ $(document).ready(function () {
 
 
 	$(".moreIndicator").on("click", function () {
-		console.log("this");
 		if ($(".moreIndicator").hasClass("rot90")) {
 			$(".moreIndicator").removeClass("rot90");
 			$(".moreIndicator").addClass("rot270");
@@ -102,6 +101,18 @@ $(document).ready(function () {
 			$(".details").slideToggle();
 		}
 	});
+
+	$("div.details").on("click", function () {
+		$("div.details").slideToggle("slow", function () {
+		 $("div.details").slideUp();
+		});
+	   });
+	   
+	   $("img#nextPhoto").position({
+		 my: "right",
+		 at: "right",
+		 of: "div#nav",
+	   });
 });
 
 window.addEventListener(
@@ -149,18 +160,3 @@ function iterateJSON(mJson) {
 		mImages[x].imgPath = mJson.images[x].imgPath;
 	}
 }
-
-
-
-//$("div.details").on("click", function () {
-// $("div.details").slideToggle("slow", function () {
-//  $("div.details").slideUp();
-// });
-//});
-
-/* $("img#nextPhoto").position({
-  my: "right",
-  at: "right",
-  of: "div#nav",
-});
- */
