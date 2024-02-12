@@ -25,9 +25,9 @@
             "date": "07/13/2023"
         },
         {
-            "imgPath": "vacationImages/bird.jpg",
+            "imgPath": "vacationImages/goat.jpg",
             "imgLocation": "Honolulu Zoo",
-            "description": "This bird was hungry",
+            "description": "He gave me the look",
             "date": "07/05/2019"
         },
         {
@@ -43,10 +43,10 @@
             "date": "07/12/2019"
         },
         {
-            "imgPath": "vacationImages/kaanapalicats.jpg",
-            "imgLocation": "Kaanapali",
-            "description": "Chill cats",
-            "date": "07/08/2019"
+            "imgPath": "vacationImages/seal.jpg",
+            "imgLocation": "Sea Life Park",
+            "description": "Smiling seal",
+            "date": "07/05/2019"
         },
         {
             "imgPath": "vacationImages/maui.jpg",
