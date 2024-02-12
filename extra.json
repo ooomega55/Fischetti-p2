@@ -1,43 +1,61 @@
 {
     "images": [
         {
-            "imgPath": "myImages/hawaiian-islands.jpg",
+            "imgPath": "vacationImages/hawaiian-islands.jpg",
             "imgLocation": "Hawaii",
             "description": "Hawaii's main island coastline",
             "date": "01/01/2016"
         },
         {
-            "imgPath": "myImages/bermuda.jpg",
+            "imgPath": "vacationImages/bermuda.jpg",
             "imgLocation": "Bermuda",
             "description": "Horseshoe Bay",
             "date": "01/02/2016"
         },
         {
-            "imgPath": "myImages/florida.jpg",
-            "imgLocation": "Florida",
+            "imgPath": "vacationImages/bermudacaves.JPG",
+            "imgLocation": "Bermuda Cave",
             "description": "Lake Eola Park in Orlando",
             "date": "01/03/2016"
         },
         {
-            "imgPath": "myImages/lasvegas.jpeg",
-            "imgLocation": "Las Vegas",
-            "description": "Las Vegas Strip",
+            "imgPath": "vacationImages/bermudanight.jpg",
+            "imgLocation": "Bermuda from the Norwegian Joy",
+            "description": "Nighttime on the Norwegian Joy",
             "date": "01/04/2016"
         },
         {
-            "imgPath": "myImages/nevada.jpg",
-            "imgLocation": "Nevada",
-            "description": "Lake Tahoe golf course",
+            "imgPath": "vacationImages/bird.jpg",
+            "imgLocation": "Honolulu Zoo",
+            "description": "This bird was hungry",
             "date": "01/02/2016"
         },
         {
-            "imgPath": "myImages/california.png",
+            "imgPath": "vacationImages/honolulu.jpg",
             "imgLocation": "California",
             "description": "Golden Gate Bridge, San Francisco",
             "date": "01/02/2016"
         },
         {
-            "imgPath": "myImages/washington.jpg",
+            "imgPath": "vacationImages/kaanapali.jpg",
+            "imgLocation": "Washington",
+            "description": "Seattle",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "vacationImages/kaanapalicats.jpg",
+            "imgLocation": "Washington",
+            "description": "Seattle",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "vacationImages/maui.jpg",
+            "imgLocation": "Washington",
+            "description": "Seattle",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "vacationImages/pearlharbor.jpg",
             "imgLocation": "Washington",
             "description": "Seattle",
             "date": "01/02/2016"
