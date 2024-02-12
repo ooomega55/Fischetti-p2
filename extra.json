@@ -1,0 +1,46 @@
+{
+    "images": [
+        {
+            "imgPath": "hawaiian-islands.jpg",
+            "imgLocation": "Hawaii",
+            "description": "Hawaii's main island coastline",
+            "date": "01/01/2016"
+        },
+        {
+            "imgPath": "bermuda.jpg",
+            "imgLocation": "Bermuda",
+            "description": "Horseshoe Bay",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "florida.jpg",
+            "imgLocation": "Florida",
+            "description": "Lake Eola Park in Orlando",
+            "date": "01/03/2016"
+        },
+        {
+            "imgPath": "lasvegas.jpeg",
+            "imgLocation": "Las Vegas",
+            "description": "Las Vegas Strip",
+            "date": "01/04/2016"
+        },
+        {
+            "imgPath": "nevada.jpg",
+            "imgLocation": "Nevada",
+            "description": "Lake Tahoe golf course",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "california.png",
+            "imgLocation": "California",
+            "description": "Golden Gate Bridge, San Francisco",
+            "date": "01/02/2016"
+        },
+        {
+            "imgPath": "washington.jpg",
+            "imgLocation": "Washington",
+            "description": "Seattle",
+            "date": "01/02/2016"
+        }
+  ]
+}
