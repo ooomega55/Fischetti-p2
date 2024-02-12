@@ -4,61 +4,61 @@
             "imgPath": "vacationImages/hawaiian-islands.jpg",
             "imgLocation": "Hawaii",
             "description": "Hawaii's main island coastline",
-            "date": "01/01/2016"
+            "date": "None"
         },
         {
             "imgPath": "vacationImages/bermuda.jpg",
             "imgLocation": "Bermuda",
             "description": "Horseshoe Bay",
-            "date": "01/02/2016"
+            "date": "None"
         },
         {
             "imgPath": "vacationImages/bermudacaves.JPG",
             "imgLocation": "Bermuda Cave",
-            "description": "Lake Eola Park in Orlando",
-            "date": "01/03/2016"
+            "description": "Crystal Cave",
+            "date": "05/22/2017"
         },
         {
             "imgPath": "vacationImages/bermudanight.jpg",
             "imgLocation": "Bermuda from the Norwegian Joy",
             "description": "Nighttime on the Norwegian Joy",
-            "date": "01/04/2016"
+            "date": "07/13/2023"
         },
         {
             "imgPath": "vacationImages/bird.jpg",
             "imgLocation": "Honolulu Zoo",
             "description": "This bird was hungry",
-            "date": "01/02/2016"
+            "date": "07/05/2019"
         },
         {
             "imgPath": "vacationImages/honolulu.jpg",
-            "imgLocation": "California",
-            "description": "Golden Gate Bridge, San Francisco",
-            "date": "01/02/2016"
+            "imgLocation": "Honolulu",
+            "description": "Kuhio Beach Park",
+            "date": "07/02/2019"
         },
         {
             "imgPath": "vacationImages/kaanapali.jpg",
-            "imgLocation": "Washington",
-            "description": "Seattle",
-            "date": "01/02/2016"
+            "imgLocation": "Kaanapali",
+            "description": "View of ocean in Maui",
+            "date": "07/12/2019"
         },
         {
             "imgPath": "vacationImages/kaanapalicats.jpg",
-            "imgLocation": "Washington",
-            "description": "Seattle",
-            "date": "01/02/2016"
+            "imgLocation": "Kaanapali",
+            "description": "Chill cats",
+            "date": "07/08/2019"
         },
         {
             "imgPath": "vacationImages/maui.jpg",
-            "imgLocation": "Washington",
-            "description": "Seattle",
-            "date": "01/02/2016"
+            "imgLocation": "Maui",
+            "description": "Coastline of Maui",
+            "date": "07/07/2019"
         },
         {
             "imgPath": "vacationImages/pearlharbor.jpg",
-            "imgLocation": "Washington",
-            "description": "Seattle",
-            "date": "01/02/2016"
+            "imgLocation": "Pearl Harbor",
+            "description": "Pearl Harbor",
+            "date": "07/03/2019"
         }
   ]
 }
