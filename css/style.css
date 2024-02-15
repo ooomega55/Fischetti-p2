@@ -2,6 +2,10 @@ body {
 	overflow: auto;
 	font-family: 'Century Gothic', sans-serif;
 	background-image: url(../img/geometry.jpg);
+	background: linear-gradient(cyan, navy);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 200px;
 }
 
 #photoBooth {
