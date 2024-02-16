@@ -5,7 +5,7 @@ body {
 	background: linear-gradient(cyan, navy);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	padding-bottom: 200px;
+	padding-bottom: 350px;
 }
 
 #photoBooth {
@@ -14,8 +14,9 @@ body {
 	width: 650px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: white;
+	background: linear-gradient(navy, cyan);
 	border-radius: 2px;
+	color: white;
 }	
 
 #slideShow {	
@@ -65,6 +66,8 @@ body {
 /*milestone 3 hover on left and right button*/
 #nav #prevPhoto:hover {
 	opacity: 0.8;
+	background-color: blue;
+	border-radius: 30px;
 }
 
 #nextPhoto {
@@ -75,6 +78,8 @@ body {
 /*milestone 3 hover on left and right button*/
 #nav #nextPhoto:hover {
 	opacity: 0.8;
+	background-color: blue;
+	border-radius: 30px;
 }
 
 .details p {
